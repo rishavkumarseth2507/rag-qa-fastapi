@@ -116,5 +116,57 @@ POST /upload
 
 ### 📊 Check Status
 ```bash
-
+GET /status/{doc_id}
 ```
+- Check processing status
+- Returns number of chunks
+
+### ❓ Ask Question
+```bash
+POST /ask
+```
+
+Request:
+```bash
+{
+  "doc_id": "your_doc_id",
+  "question": "Your question here"
+}
+```
+
+Response:
+```bash
+{
+  "answer": "...",
+  "retrieval_latency_ms": 12.5,
+  "sources": [...]
+}
+```
+
+## ⚠️ Limitations
+- Only supports PDF and TXT files
+- Single document querying (per doc_id)
+- No hybrid search (only embeddings)
+
+
+## 🔍 Key Design Decisions
+- Used FAISS for fast local retrieval
+- Implemented background tasks to avoid blocking API
+- Used chunk size = 1000, overlap = 200 for balance between context and precision
+- Strict prompt to prevent hallucination
+
+## 🚀 Future Improvements
+- Hybrid search (BM25 + embeddings)
+- Reranking models
+- Multi-document querying
+- Streaming responses
+
+## 👨‍💻 Author
+
+Rishav Kumar
+MSc Mathematics & Scientific Computing, MNNIT Allahabad
+Aspiring AI/ML & LLM Engineer
+
+
+⭐ If you found this useful
+Give a ⭐ to the repository!
