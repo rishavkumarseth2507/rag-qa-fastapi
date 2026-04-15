@@ -1,0 +1,52 @@
+{
+  "717f164a-51f7-471f-98c2-c061e9c99fd8": {
+    "doc_id": "717f164a-51f7-471f-98c2-c061e9c99fd8",
+    "filename": "AI_Agent_Development_Assignment_.pdf",
+    "file_path": "C:\\Users\\risha\\Downloads\\rag-api\\data\\uploads\\717f164a-51f7-471f-98c2-c061e9c99fd8_AI_Agent_Development_Assignment_.pdf",
+    "file_type": "PDF",
+    "status": "failed",
+    "total_chunks": 0,
+    "vectorstore_path": "",
+    "error": "`pypdf` package not found, please install it with `pip install pypdf`"
+  },
+  "fa1372af-78c6-4477-a3e3-0b07389a9997": {
+    "doc_id": "fa1372af-78c6-4477-a3e3-0b07389a9997",
+    "filename": "AI_Agent_Development_Assignment_.pdf",
+    "file_path": "C:\\Users\\risha\\Downloads\\rag-api\\data\\uploads\\fa1372af-78c6-4477-a3e3-0b07389a9997_AI_Agent_Development_Assignment_.pdf",
+    "file_type": "PDF",
+    "status": "failed",
+    "total_chunks": 0,
+    "vectorstore_path": "",
+    "error": "`pypdf` package not found, please install it with `pip install pypdf`"
+  },
+  "c88cf8d5-d236-48d4-b94b-176109077b8a": {
+    "doc_id": "c88cf8d5-d236-48d4-b94b-176109077b8a",
+    "filename": "AI_Agent_Development_Assignment_.pdf",
+    "file_path": "C:\\Users\\risha\\Downloads\\rag-api\\data\\uploads\\c88cf8d5-d236-48d4-b94b-176109077b8a_AI_Agent_Development_Assignment_.pdf",
+    "file_type": "PDF",
+    "status": "failed",
+    "total_chunks": 0,
+    "vectorstore_path": "",
+    "error": "`pypdf` package not found, please install it with `pip install pypdf`"
+  },
+  "58edc36d-3230-4f95-828a-b3e667a112ec": {
+    "doc_id": "58edc36d-3230-4f95-828a-b3e667a112ec",
+    "filename": "AI_Agent_Development_Assignment_.pdf",
+    "file_path": "C:\\Users\\risha\\Downloads\\rag-api\\data\\uploads\\58edc36d-3230-4f95-828a-b3e667a112ec_AI_Agent_Development_Assignment_.pdf",
+    "file_type": "PDF",
+    "status": "ready",
+    "total_chunks": 7,
+    "vectorstore_path": "C:\\Users\\risha\\Downloads\\rag-api\\data\\vectorstores\\58edc36d-3230-4f95-828a-b3e667a112ec",
+    "error": null
+  },
+  "ad905c4a-3a3d-406c-818b-7ad95cf1df51": {
+    "doc_id": "ad905c4a-3a3d-406c-818b-7ad95cf1df51",
+    "filename": "AI_Agent_Development_Assignment_.pdf",
+    "file_path": "C:\\Users\\risha\\Downloads\\rag-api\\data\\uploads\\ad905c4a-3a3d-406c-818b-7ad95cf1df51_AI_Agent_Development_Assignment_.pdf",
+    "file_type": "PDF",
+    "status": "ready",
+    "total_chunks": 7,
+    "vectorstore_path": "C:\\Users\\risha\\Downloads\\rag-api\\data\\vectorstores\\ad905c4a-3a3d-406c-818b-7ad95cf1df51",
+    "error": null
+  }
+}
