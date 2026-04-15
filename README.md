@@ -16,7 +16,29 @@ A FastAPI-based Retrieval-Augmented Generation (RAG) system that allows users to
 - Retrieval latency tracking
 
 ---
+## 📌 Features
 
+- 📄 Supports **PDF and TXT** document upload
+- ✂️ Intelligent **document chunking**
+- 🔍 **Semantic search** using FAISS vector database
+- 🤖 Answer generation using **LLMs (Groq - LLaMA models)**
+- ⚡ **FastAPI backend** with clean API design
+- 🔄 **Background processing** for document ingestion
+- 📊 Tracks **retrieval latency**
+- 🚫 **Rate limiting** to prevent abuse
+- 🧾 Structured responses with **source references**
+
+---
+## 🧠 Tech Stack
+
+- **Backend:** FastAPI
+- **Embeddings:** Google Generative AI (`gemini-embedding-001`)
+- **Vector Store:** FAISS
+- **LLM:** Groq (LLaMA models)
+- **Chunking:** RecursiveCharacterTextSplitter
+- **Rate Limiting:** slowapi
+
+---
 ## Project Structure
 
 ```bash
@@ -24,9 +46,6 @@ rag_fastapi/
 │
 ├── main.py
 ├── data/
-│   ├── uploads/
-│   ├── vectorstores/
-│   └── registry.json
 ├── requirements.txt
 ├── .env.example
 ├── README.md
@@ -45,56 +64,55 @@ rag_fastapi/
 
 ---
 ## Setup Instructions
-1. Clone the repository
+
+### 1️⃣ Clone the repository
 ```bash
 git clone <your-github-repo-link>
 cd rag_fastapi
 ```
 
 
-2. Create virtual environment
-Windows
+### 2️⃣ Create virtual environment
+
 ```bash
-python -m venv venv
-venv\Scripts\activate
+python -m venv myenv
+myenv\Scripts\activate
 ```
 
-Linux/Mac
+### 3️⃣ Install dependencies
+
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+pip install -r requirements.txt
 ```
 
-
+### 4️⃣ Setup environment variables
 
 ```bash
-
+GOOGLE_API_KEY=your_google_api_key
+GROQ_API_KEY=your_groq_api_key
 ```
 
-
-
-```bash
-
-```
-
-
+### 5️⃣ Run the server
 
 ```bash
-
+uvicorn main:app --reload
 ```
 
 
-
+### 6️⃣ Open API Docs
 ```bash
-
+👉 http://127.0.0.1:8000/docs
 ```
 
+------
 
-
+## 📡 API Endpoints
+### 📤 Upload Document
 ```bash
-
+POST /upload
 ```
-
+- Upload PDF or TXT file
+- Returns doc_id
 
 
 ```bash
