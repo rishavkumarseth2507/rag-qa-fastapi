@@ -114,7 +114,7 @@ POST /upload
 - Upload PDF or TXT file
 - Returns doc_id
 
-
+### 📊 Check Status
 ```bash
 
 ```
