@@ -153,7 +153,16 @@ Response:
   "sources": [...]
 }
 ```
+-----
+📊 Metrics Tracked
+- Retrieval latency (ms)
+- Number of retrieved chunks
 
+
+
+
+
+------
 ## ⚠️ Limitations
 - Only supports PDF and TXT files
 - Single document querying (per doc_id)
