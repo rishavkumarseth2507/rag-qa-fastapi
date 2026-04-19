@@ -1,49 +1,53 @@
-# RAG-Based Question Answering System
+# 🚀 RAG-Based Question Answering System (FastAPI)
 
-A FastAPI-based Retrieval-Augmented Generation (RAG) system that allows users to upload documents and ask questions grounded in those documents.
-
-## Features
-
-- Upload documents in **PDF** and **TXT** formats
-- Background document ingestion
-- Document chunking using `RecursiveCharacterTextSplitter`
-- Embedding generation using **Google Generative AI Embeddings**
-- Local vector storage using **FAISS**
-- Similarity-based retrieval
-- Answer generation using **Groq LLM**
-- Request validation using **Pydantic**
-- Basic API rate limiting using **slowapi**
-- Retrieval latency tracking
+A production-style Retrieval-Augmented Generation (RAG) API that allows users to upload documents and ask context-aware questions using embeddings, vector search, and LLMs.
 
 ---
-## 📌 Features
 
-- 📄 Supports **PDF and TXT** document upload
-- ✂️ Intelligent **document chunking**
-- 🔍 **Semantic search** using FAISS vector database
-- 🤖 Answer generation using **LLMs (Groq - LLaMA models)**
-- ⚡ **FastAPI backend** with clean API design
-- 🔄 **Background processing** for document ingestion
-- 📊 Tracks **retrieval latency**
-- 🚫 **Rate limiting** to prevent abuse
+## 🎥 Demo Video
+
+This demo shows the complete RAG pipeline:
+**document upload → background ingestion → embeddings → retrieval → LLM answer generation**
+
+[![Watch Demo](https://img.youtube.com/vi/3-8h5HIcPsE/0.jpg)](https://youtu.be/3-8h5HIcPsE)
+
+---
+
+## ✨ Features
+
+- 📄 Supports **PDF and TXT** document upload  
+- ✂️ Intelligent **document chunking (1000 size, 200 overlap)**  
+- 🔍 **Semantic search** using FAISS vector database  
+- 🤖 Answer generation using **Groq LLM (LLaMA models)**  
+- ⚡ **FastAPI backend** with clean API design  
+- 🔄 **Background ingestion pipeline** (non-blocking)  
+- 📊 Tracks **retrieval latency**  
+- 🚫 **Rate limiting** (5 requests/minute)  
 - 🧾 Structured responses with **source references**
 
--------
-## 🎥 Demo Video
-Watch the demo here:
-[![Watch Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/3-8h5HIcPsE)
-
-
-
 ---
+
 ## 🧠 Tech Stack
 
-- **Backend:** FastAPI
-- **Embeddings:** Google Generative AI (`gemini-embedding-001`)
-- **Vector Store:** FAISS
-- **LLM:** Groq (LLaMA models)
-- **Chunking:** RecursiveCharacterTextSplitter
-- **Rate Limiting:** slowapi
+- **Backend:** FastAPI  
+- **Embeddings:** Google Generative AI (`gemini-embedding-001`)  
+- **Vector Store:** FAISS  
+- **LLM:** Groq (`llama-3.3-70b-versatile`, fallback supported)  
+- **Chunking:** RecursiveCharacterTextSplitter  
+- **Rate Limiting:** slowapi  
+
+---
+
+## 🏗️ Architecture Flow
+User → FastAPI API
+
+/upload → Save file → Background ingestion
+→ Chunking → Embeddings → FAISS storage
+
+/ask → Load FAISS → Similarity search (Top-K)
+→ Context building → LLM → Answer + sources + latency
+
+
 
 ---
 ## Project Structure
