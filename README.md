@@ -28,6 +28,13 @@ A FastAPI-based Retrieval-Augmented Generation (RAG) system that allows users to
 - 🚫 **Rate limiting** to prevent abuse
 - 🧾 Structured responses with **source references**
 
+-------
+## 🎥 Demo Video
+Watch the demo here:
+[![Watch Demo](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://youtu.be/3-8h5HIcPsE)
+
+
+
 ---
 ## 🧠 Tech Stack
 
