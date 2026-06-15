@@ -9,7 +9,9 @@ A production-style Retrieval-Augmented Generation (RAG) API that allows users to
 This demo shows the complete RAG pipeline:
 **document upload → background ingestion → embeddings → retrieval → LLM answer generation**
 
-[![Watch Demo](https://img.youtube.com/vi/3-8h5HIcPsE/0.jpg)](https://youtu.be/3-8h5HIcPsE)
+[![Watch Demo](https://img.youtube.com/vi/3-8h5HIcPsE/0.jpg)](https://youtu.be/3hk7w_iEpEY)
+
+
 
 ---
 
